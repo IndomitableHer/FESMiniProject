@@ -108,8 +108,63 @@ padding: 0 24px;}
             max-width: 600px;
             margin: 0 auto;
             display: flex;
-            flex-direction: column;}
+            flex-direction: column;
+            padding: 0 24px;}
+
+
         input, textarea {
             padding: 12px;
             margin-bottom: 24px;
             font-size: 20px;}
+
+               /* 
+    Small phones, tablets, large smartphones (landscape)
+    */ 
+            @media (max-width: 728px) {
+                .row {
+                    flex-direction: column;
+                }
+
+                .home__description {
+                    margin-bottom: 24px;
+                }
+
+                .home__description--button {
+                    max-width: 240px;
+                }
+
+                h1 {
+                    text-align: center;
+                    font-size:60px;
+                }
+                
+                .subheader {
+                    text-align: center;
+                    font-size: 28px;
+                }
+
+            ul {
+                display: none;
+            }    
+
+            .section__description {
+                flex-direction: column;}
+
+                .section__description--wrapper {
+                    width: 100%;
+                }
+                .about__img--wrapper {
+                    width: 100%;
+                }
+                #discord .section__description {
+                    flex-direction: column-reverse;
+                }
+.footer {
+    padding: 48px 24px
+}
+.footer__logo {
+max-width:360px }
+
+            }
+
+            
